@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "87729452550",
+    "firebase_url": "https://ettimadai-5be21.firebaseio.com",
+    "project_id": "ettimadai-5be21",
+    "storage_bucket": "ettimadai-5be21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87729452550:android:d236be5b9bb56a4745f587",
+        "android_client_info": {
+          "package_name": "com.example.ettimadai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87729452550-ge712saev3at7j53cj6s6g9eeov39dis.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ettimadai",
+            "certificate_hash": "f22ac2b23c065ba24609f04d842ffe5fa60f971b"
+          }
+        },
+        {
+          "client_id": "87729452550-rp3cmju0b3a9g8r4qtrnepfhbirc0gd9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHTy3gif4bAUhsIgT9RZgm8xUshl7J2rw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87729452550-rp3cmju0b3a9g8r4qtrnepfhbirc0gd9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".quizes">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="வினாடி வினாவுக்கு வருக"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="1)கொரோனாவின் அறிகுறிகள் என்ன?"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="காய்ச்சல்" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+
+        android:text="இருமல்" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="தூக்கமின்மை" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="மூச்சு திணறல்" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="தொன்டை வலி." />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="வாந்தி" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:onClick="q1"
+        android:layout_marginStart="10dp"
+        />
+<ImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+android:layout_marginTop="5dp"
+    android:id="@+id/resu"
+    android:visibility="gone"
+    android:layout_marginStart="20dp"
+
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="2)கொரோனா எப்படி மற்றவர்களுக்கு தொற்றுகிறது?"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox21"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="எச்சில் துளிகள்" />
+
+    <CheckBox
+        android:id="@+id/checkBox22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+
+        android:text="தண்ணீர்" />
+
+    <CheckBox
+        android:id="@+id/checkBox23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="ரத்தம்" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:onClick="q2"
+        android:layout_marginStart="10dp"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/resu1"
+        android:visibility="gone"
+        android:layout_marginStart="20dp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="3)கொரோனா வைரஸ் எத்தணை நாட்கள் நம் உடலுக்குள் இருக்கும்?"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox31"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="1" />
+
+    <CheckBox
+        android:id="@+id/checkBox32"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+
+        android:text="3" />
+
+    <CheckBox
+        android:id="@+id/checkBox33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="7-14" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:onClick="q3"
+        android:layout_marginStart="10dp"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/resu3"
+        android:visibility="gone"
+        android:layout_marginStart="20dp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="4)கொரோனா காற்றின் மூலம் பரவுமா?"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox41"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="ஆம்" />
+
+    <CheckBox
+        android:id="@+id/checkBox42"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="இல்லை" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:onClick="q4"
+        android:layout_marginStart="10dp"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/resu4"
+        android:visibility="gone"
+        android:layout_marginStart="20dp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="5)கொரோனா வைரஸ் இருக்கும் அனைவருக்கும் அறிகுறிகள் இருக்கிறதா?"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox51"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="ஆம்" />
+
+    <CheckBox
+        android:id="@+id/checkBox52"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="இல்லை" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:onClick="q5"
+        android:layout_marginStart="10dp"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/resu5"
+        android:visibility="gone"
+        android:layout_marginStart="20dp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="6)நீங்கள் பயன்படுத்தும் முகக் கவசம் எவ்வாறு துவைக்க வேண்டும்?"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox61"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="சோப்பு தண்ணீரில்" />
+
+    <CheckBox
+        android:id="@+id/checkBox62"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="தண்ணீரில்" />
+
+    <CheckBox
+        android:id="@+id/checkBox63"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="துடைத்தால் போதும்" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:onClick="q6"
+        android:layout_marginStart="10dp"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/resu6"
+        android:visibility="gone"
+        android:layout_marginStart="20dp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="7)எத்தணை நொடிகள் கை கழுவ வேண்டும்?"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox71"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="5" />
+
+    <CheckBox
+        android:id="@+id/checkBox72"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="10" />
+
+    <CheckBox
+        android:id="@+id/checkBox73"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="20" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:onClick="q7"
+        android:layout_marginStart="10dp"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/resu7"
+        android:visibility="gone"
+        android:layout_marginStart="20dp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="8)நோய் எதிர்பு சக்தி நிறைந்த உணவுகள் என்னென்ன?"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox81"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="பரோட்டா" />
+
+    <CheckBox
+        android:id="@+id/checkBox82"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="கருஞ்ஜீரகம்" />
+
+    <CheckBox
+        android:id="@+id/checkBox83"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="பப்பாளி,கேரட்" />
+
+    <CheckBox
+        android:id="@+id/checkBox84"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="இட்லி, தோசை" />
+
+    <CheckBox
+        android:id="@+id/checkBox85"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="இஞ்சி,பூண்டு" />
+
+    <CheckBox
+        android:id="@+id/checkBox86"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="மஞ்சள்த்தூள், முருங்கைக்கீரை" />
+
+    <CheckBox
+        android:id="@+id/checkBox87"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="பன்னீர்" />
+
+    <CheckBox
+        android:id="@+id/checkBox88"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="எலுமிச்சை, ஆரஞ்சு" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:onClick="q8"
+        android:layout_marginStart="10dp"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/resu8"
+        android:visibility="gone"
+        android:layout_marginStart="20dp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="9)ஒருவருக்கு ஒருவர் எத்தணை தூரம் இடைவெளி இருக்க வேண்டும்?"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox91"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="இடைவெளி வேண்டாம்" />
+
+    <CheckBox
+        android:id="@+id/checkBox92"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="ஒரு அடி" />
+
+    <CheckBox
+        android:id="@+id/checkBox93"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="இரண்டு அடி" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:onClick="q9"
+        android:layout_marginStart="10dp"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/resu9"
+        android:visibility="gone"
+        android:layout_marginStart="20dp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="10)கொரோனா நம் உடலில் எந்த உறுப்பை பாதிக்கிறது?"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox101"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="இதயம்" />
+
+    <CheckBox
+        android:id="@+id/checkBox102"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="சிறுநீரகம்" />
+
+    <CheckBox
+        android:id="@+id/checkBox103"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="நுரையீரல்" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:onClick="q10"
+        android:layout_marginStart="10dp"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/resu10"
+        android:visibility="gone"
+        android:layout_marginStart="20dp"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="11)உங்கள் வீட்டில் முதியோர், கர்ப்பிணி பெண் யாரேனும் உள்ளனரா?"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox111"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="ஆம், உள்ளனர்" />
+
+    <CheckBox
+        android:id="@+id/checkBox112"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="இல்லை" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+
+        android:layout_marginStart="10dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="finished"
+        android:onClick="score"
+        android:layout_marginStart="10dp"
+        />
+
+</LinearLayout>
+</ScrollView>
