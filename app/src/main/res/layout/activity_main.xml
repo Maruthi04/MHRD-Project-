@@ -16,183 +16,347 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:textSize="25sp"
-    android:text="Sample Text here"
+    android:text="விழிப்புணர்வு வீடியோக்கள்"
     android:layout_gravity="center"
     android:gravity="center"
     android:textColor="#000"
     android:layout_marginTop="20dp"
 
     />
-<androidx.cardview.widget.CardView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="40dp"
-    android:layout_marginStart="10dp"
-    android:backgroundTint="#fff"
-    android:layout_marginEnd="10dp"
-    app:cardCornerRadius="10dp"
-    app:cardElevation="20dp"
-    >
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:background="#fff"
-        android:padding="10dp"
-        android:orientation="vertical"
-        android:layout_height="match_parent">
-        <VideoView
-            android:id="@+id/videoView"
-            android:layout_width="match_parent"
-            android:layout_gravity="center"
-            android:layout_height="250dp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:text="Hello this is the summary of the video!"
-            android:textColor="#000"
-            android:textSize="15sp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
-            android:layout_height="wrap_content"/>
-
-    </LinearLayout>
-</androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:backgroundTint="#fff"
-        android:layout_marginEnd="10dp"
         app:cardCornerRadius="10dp"
-        app:cardElevation="20dp"
+        app:cardElevation="10dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
-            android:background="#fff"
-            android:padding="10dp"
-            android:orientation="vertical"
-            android:layout_height="match_parent">
-            <VideoView
-                android:id="@+id/videoView1"
-                android:layout_width="match_parent"
-                android:layout_gravity="center"
-                android:layout_height="250dp"/>
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
             <TextView
                 android:layout_width="match_parent"
-                android:text="Hello this is the summary of the video!"
+                android:layout_height="wrap_content"
+                android:text="கொரோனா எப்படி பரவுகிறது"
+                android:textSize="20sp"
+                android:id="@+id/v1"
+                android:textStyle="bold"
                 android:textColor="#000"
-                android:textSize="15sp"
-                android:layout_gravity="center"
                 android:gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                android:layout_height="wrap_content"/>
-
+                />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:backgroundTint="#fff"
-        android:layout_marginEnd="10dp"
         app:cardCornerRadius="10dp"
-        app:cardElevation="20dp"
+        app:cardElevation="10dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
-            android:background="#fff"
-            android:padding="10dp"
-            android:orientation="vertical"
-            android:layout_height="match_parent">
-            <VideoView
-                android:id="@+id/videoView2"
-                android:layout_width="match_parent"
-                android:layout_gravity="center"
-                android:layout_height="250dp"/>
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
             <TextView
                 android:layout_width="match_parent"
-                android:text="Hello this is the summary of the video!"
+                android:layout_height="wrap_content"
+                android:text="சமூக விலகல் அவசியம்"
+                android:textSize="20sp"
+                android:id="@+id/v2"
+                android:textStyle="bold"
                 android:textColor="#000"
-                android:textSize="15sp"
-                android:layout_gravity="center"
                 android:gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                android:layout_height="wrap_content"/>
-
+                />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:backgroundTint="#fff"
-        android:layout_marginEnd="10dp"
         app:cardCornerRadius="10dp"
-        app:cardElevation="20dp"
+        app:cardElevation="10dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
-            android:background="#fff"
-            android:padding="10dp"
-            android:orientation="vertical"
-            android:layout_height="match_parent">
-            <VideoView
-                android:id="@+id/videoView3"
-                android:layout_width="match_parent"
-                android:layout_gravity="center"
-                android:layout_height="250dp"/>
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
             <TextView
                 android:layout_width="match_parent"
-                android:text="Hello this is the summary of the video!"
+                android:layout_height="wrap_content"
+                android:text="கைகளை கழுவிடுவோம்"
+                android:textSize="20sp"
+                android:id="@+id/v3"
+                android:textStyle="bold"
                 android:textColor="#000"
-                android:textSize="15sp"
-                android:layout_gravity="center"
                 android:gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                android:layout_height="wrap_content"/>
-
+                />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:backgroundTint="#fff"
-        android:layout_marginEnd="10dp"
         app:cardCornerRadius="10dp"
-        app:cardElevation="20dp"
+        app:cardElevation="10dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
-            android:background="#fff"
-            android:padding="10dp"
-            android:orientation="vertical"
-            android:layout_height="match_parent">
-            <VideoView
-                android:id="@+id/videoView4"
-                android:layout_width="match_parent"
-                android:layout_gravity="center"
-                android:layout_height="250dp"/>
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
             <TextView
                 android:layout_width="match_parent"
-                android:text="Hello this is the summary of the video!"
+                android:layout_height="wrap_content"
+                android:text=")சமூக விலகலை ஏன் கடைபிடிக்க வேண்டும்?"
+                android:id="@+id/v4"
+                android:textSize="20sp"
+                android:textStyle="bold"
                 android:textColor="#000"
-                android:textSize="15sp"
-                android:layout_gravity="center"
                 android:gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                android:layout_height="wrap_content"/>
-
+                />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#fff"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="நோய் எதிர்பு சக்தியை கூட்டும் உணவுகள் - 1"
+                android:id="@+id/v5"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#fff"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="நோய் எதிர்பு சக்தியை கூட்டும் உணவுகள் - 2"
+                android:id="@+id/v6"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+<!--<androidx.cardview.widget.CardView-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginTop="40dp"-->
+<!--    android:layout_marginStart="10dp"-->
+<!--    android:backgroundTint="#fff"-->
+<!--    android:layout_marginEnd="10dp"-->
+<!--    app:cardCornerRadius="10dp"-->
+<!--    app:cardElevation="20dp"-->
+<!--    >-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:background="#fff"-->
+<!--        android:padding="10dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_height="match_parent">-->
+<!--        <VideoView-->
+<!--            android:id="@+id/videoView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_height="250dp"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:text="Hello this is the summary of the video!"-->
+<!--            android:textColor="#000"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+<!--    </LinearLayout>-->
+<!--</androidx.cardview.widget.CardView>-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:backgroundTint="#fff"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        app:cardCornerRadius="10dp"-->
+<!--        app:cardElevation="20dp"-->
+<!--        >-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:background="#fff"-->
+<!--            android:padding="10dp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_height="match_parent">-->
+<!--            <VideoView-->
+<!--                android:id="@+id/videoView1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_height="250dp"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:text="Hello this is the summary of the video!"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="15sp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:backgroundTint="#fff"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        app:cardCornerRadius="10dp"-->
+<!--        app:cardElevation="20dp"-->
+<!--        >-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:background="#fff"-->
+<!--            android:padding="10dp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_height="match_parent">-->
+<!--            <VideoView-->
+<!--                android:id="@+id/videoView2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_height="250dp"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:text="Hello this is the summary of the video!"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="15sp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:backgroundTint="#fff"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        app:cardCornerRadius="10dp"-->
+<!--        app:cardElevation="20dp"-->
+<!--        >-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:background="#fff"-->
+<!--            android:padding="10dp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_height="match_parent">-->
+<!--            <VideoView-->
+<!--                android:id="@+id/videoView3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_height="250dp"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:text="Hello this is the summary of the video!"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="15sp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:backgroundTint="#fff"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        app:cardCornerRadius="10dp"-->
+<!--        app:cardElevation="20dp"-->
+<!--        >-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:background="#fff"-->
+<!--            android:padding="10dp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_height="match_parent">-->
+<!--            <VideoView-->
+<!--                android:id="@+id/videoView4"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_height="250dp"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:text="Hello this is the summary of the video!"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="15sp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
 
 </LinearLayout>
 

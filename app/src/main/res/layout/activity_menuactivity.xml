@@ -19,7 +19,7 @@
     <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="வரவேற்பு"
+    android:text="வணக்கம்"
     android:textColor="#000"
     android:textSize="25sp"
 
@@ -29,7 +29,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="கொரோனா வைரஸ் வீடியோக்கள்"
+        android:text="கொரோனா வைரஸ் விழிப்புணர்வு வீடியோக்கள்"
         android:textColor="#000"
         android:onClick="videos"
         android:layout_marginStart="30dp"
@@ -39,7 +39,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="வினாடி வினாவில் கலந்து கொள்ளுங்கள்"
+        android:text="விழிப்புணர்வு தேர்வு"
         android:textColor="#000"
         android:onClick="quiz"
         android:layout_marginStart="30dp"

@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000"
-        android:text="வினாடி வினாவுக்கு வருக"
+        android:text="விழிப்புணர்வு தேர்வு"
         android:textStyle="bold"
         android:textSize="25sp"
         android:gravity="center"
@@ -81,7 +81,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="submit"
+        android:text="பதிவிடுங்கள்"
         android:onClick="q1"
         android:layout_marginStart="10dp"
         />
@@ -132,7 +132,7 @@ android:layout_marginTop="5dp"
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="submit"
+        android:text="பதிவிடுங்கள்"
         android:onClick="q2"
         android:layout_marginStart="10dp"
         />
@@ -183,7 +183,7 @@ android:layout_marginTop="5dp"
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="submit"
+        android:text="பதிவிடுங்கள்"
         android:onClick="q3"
         android:layout_marginStart="10dp"
         />
@@ -228,7 +228,7 @@ android:layout_marginTop="5dp"
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="submit"
+        android:text="பதிவிடுங்கள்"
         android:onClick="q4"
         android:layout_marginStart="10dp"
         />
@@ -273,7 +273,7 @@ android:layout_marginTop="5dp"
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="submit"
+        android:text="பதிவிடுங்கள்"
         android:onClick="q5"
         android:layout_marginStart="10dp"
         />
@@ -323,7 +323,7 @@ android:layout_marginTop="5dp"
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="submit"
+        android:text="பதிவிடுங்கள்"
         android:onClick="q6"
         android:layout_marginStart="10dp"
         />
@@ -373,7 +373,7 @@ android:layout_marginTop="5dp"
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="submit"
+        android:text="பதிவிடுங்கள்"
         android:onClick="q7"
         android:layout_marginStart="10dp"
         />
@@ -458,7 +458,7 @@ android:layout_marginTop="5dp"
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="submit"
+        android:text="பதிவிடுங்கள்"
         android:onClick="q8"
         android:layout_marginStart="10dp"
         />
@@ -508,7 +508,7 @@ android:layout_marginTop="5dp"
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="submit"
+        android:text="பதிவிடுங்கள்"
         android:onClick="q9"
         android:layout_marginStart="10dp"
         />
@@ -558,7 +558,7 @@ android:layout_marginTop="5dp"
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="submit"
+        android:text="பதிவிடுங்கள்"
         android:onClick="q10"
         android:layout_marginStart="10dp"
         />
@@ -601,7 +601,7 @@ android:layout_marginTop="5dp"
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="submit"
+        android:text="பதிவிடுங்கள்"
 
         android:layout_marginStart="10dp"
         />

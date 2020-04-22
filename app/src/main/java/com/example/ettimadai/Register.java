@@ -85,6 +85,7 @@ public class Register extends AppCompatActivity {
             public void onClick(View v)
             {
                 SelectImage();
+
             }
         });
 
@@ -115,10 +116,12 @@ public class Register extends AppCompatActivity {
         member.setMobile(mobile);
         reff.child(aadhar).setValue(member);
             Toast.makeText(Register.this,"data inserted",Toast.LENGTH_LONG).show();
+            Intent in=new Intent(this,menuactivity.class);
+            startActivity(in);
         }
     }
     public void video(View v){
-        Intent in=new Intent(this,MainActivity.class);
+        Intent in=new Intent(this,menuactivity.class);
         startActivity(in);
     }
     private void SelectImage()
@@ -160,6 +163,7 @@ public class Register extends AppCompatActivity {
                                 getContentResolver(),
                                 filePath);
                 imageView.setImageBitmap(bitmap);
+                uploadImage();
             }
 
             catch (IOException e) {

@@ -41,7 +41,7 @@
         android:layout_marginStart="15sp"
         android:layout_marginEnd="15sp"
         android:textColor="#000"
-    android:text="உங்கள் ஆதார் எண்ணை உள்ளிடவும்"
+    android:text="உங்கள் ஆதார் எண்ணை பதிவு செய்க"
     android:gravity="center"
 
     />
@@ -53,6 +53,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:id="@+id/aadhar"
+        android:inputType="number"
 
         android:hint="இங்கே எழுதுங்கள்"/>
     <TextView
@@ -63,7 +64,7 @@
         android:layout_marginStart="15sp"
         android:layout_marginEnd="15sp"
         android:textColor="#000"
-        android:text="உங்களுடைய கைபேசி எண்ணை உள்ளிடவும்"
+        android:text="உங்களுடைய கைபேசி எண்ணை பதிவு செய்க"
         android:gravity="center"
 
         />
@@ -75,16 +76,21 @@
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:id="@+id/mobile"
-
+android:inputType="number"
         android:hint="இங்கே எழுதுங்கள்"/>
-    <Button
-        android:id="@+id/submit"
-        android:text="Submit the details"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:onClick="submitfirebase"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:textColor="#000"
+        android:text="உங்களுடைய புகைப்படத்தை பதிவு செய்க"
+        android:gravity="center"
+
+        />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -104,18 +110,20 @@
         <!--Button for choosing image from gallery-->
         <Button
             android:id="@+id/btnChoose"
-            android:text="Choose"
+            android:text="புகைப்படத்தைத ேர்வு செய்யவும்"
             android:layout_weight="1"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <!--Button for uploading image-->
         <Button
             android:id="@+id/btnUpload"
-            android:text="Upload"
+            android:text="பதிவேற்றவும்"
             android:layout_weight="1"
             android:layout_width="0dp"
+            android:visibility="gone"
             android:layout_height="wrap_content" />
+
     </LinearLayout>
 
     <!--Image View for showing image choosen from gallery-->
@@ -123,14 +131,24 @@
         android:id="@+id/imgView"
         android:layout_width="200dp"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_height="150dp" />
     </LinearLayout>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Next"
+        android:visibility="gone"
         android:layout_marginBottom="50dp"
         android:onClick="video"/>
+    <Button
+        android:id="@+id/submit"
+        android:text="பதிவேற்றவும்"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="submitfirebase"
+        android:layout_height="wrap_content" />
 </LinearLayout>
 </ScrollView>
