@@ -19,7 +19,8 @@
     android:text="விழிப்புணர்வு வீடியோக்கள்"
     android:layout_gravity="center"
     android:gravity="center"
-    android:textColor="#000"
+    android:textColor="#4CAF50"
+    android:textStyle="bold"
     android:layout_marginTop="20dp"
 
     />
@@ -44,7 +45,7 @@
                 android:text="கொரோனா எப்படி பரவுகிறது"
                 android:textSize="20sp"
                 android:id="@+id/v1"
-                android:textStyle="bold"
+
                 android:textColor="#000"
                 android:gravity="center"
                 />
@@ -71,7 +72,7 @@
                 android:text="சமூக விலகல் அவசியம்"
                 android:textSize="20sp"
                 android:id="@+id/v2"
-                android:textStyle="bold"
+
                 android:textColor="#000"
                 android:gravity="center"
                 />
@@ -98,7 +99,7 @@
                 android:text="கைகளை கழுவிடுவோம்"
                 android:textSize="20sp"
                 android:id="@+id/v3"
-                android:textStyle="bold"
+
                 android:textColor="#000"
                 android:gravity="center"
                 />
@@ -122,10 +123,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text=")சமூக விலகலை ஏன் கடைபிடிக்க வேண்டும்?"
+                android:text="சமூக விலகலை ஏன் கடைபிடிக்க வேண்டும்?"
                 android:id="@+id/v4"
                 android:textSize="20sp"
-                android:textStyle="bold"
+
                 android:textColor="#000"
                 android:gravity="center"
                 />
@@ -152,7 +153,7 @@
                 android:text="நோய் எதிர்பு சக்தியை கூட்டும் உணவுகள் - 1"
                 android:id="@+id/v5"
                 android:textSize="20sp"
-                android:textStyle="bold"
+
                 android:textColor="#000"
                 android:gravity="center"
                 />
@@ -180,7 +181,7 @@
                 android:text="நோய் எதிர்பு சக்தியை கூட்டும் உணவுகள் - 2"
                 android:id="@+id/v6"
                 android:textSize="20sp"
-                android:textStyle="bold"
+
                 android:textColor="#000"
                 android:gravity="center"
                 />

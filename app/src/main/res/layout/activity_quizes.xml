@@ -12,13 +12,20 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".quizes">
-
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/origlogo"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#000"
+        android:textColor="#4CAF50"
         android:text="விழிப்புணர்வு தேர்வு"
         android:textStyle="bold"
+
         android:textSize="25sp"
         android:gravity="center"
         android:layout_marginTop="20dp"
@@ -83,6 +90,9 @@
         android:layout_height="wrap_content"
         android:text="பதிவிடுங்கள்"
         android:onClick="q1"
+        android:background="@drawable/buttonbg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:layout_marginStart="10dp"
         />
 <ImageView
@@ -133,6 +143,9 @@ android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="பதிவிடுங்கள்"
+        android:background="@drawable/buttonbg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:onClick="q2"
         android:layout_marginStart="10dp"
         />
@@ -185,6 +198,9 @@ android:layout_marginTop="5dp"
         android:layout_height="wrap_content"
         android:text="பதிவிடுங்கள்"
         android:onClick="q3"
+        android:background="@drawable/buttonbg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:layout_marginStart="10dp"
         />
     <ImageView
@@ -230,6 +246,9 @@ android:layout_marginTop="5dp"
         android:layout_height="wrap_content"
         android:text="பதிவிடுங்கள்"
         android:onClick="q4"
+        android:background="@drawable/buttonbg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:layout_marginStart="10dp"
         />
     <ImageView
@@ -275,6 +294,9 @@ android:layout_marginTop="5dp"
         android:layout_height="wrap_content"
         android:text="பதிவிடுங்கள்"
         android:onClick="q5"
+        android:background="@drawable/buttonbg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:layout_marginStart="10dp"
         />
     <ImageView
@@ -325,6 +347,10 @@ android:layout_marginTop="5dp"
         android:layout_height="wrap_content"
         android:text="பதிவிடுங்கள்"
         android:onClick="q6"
+        android:background="@drawable/buttonbg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
         android:layout_marginStart="10dp"
         />
     <ImageView
@@ -375,6 +401,9 @@ android:layout_marginTop="5dp"
         android:layout_height="wrap_content"
         android:text="பதிவிடுங்கள்"
         android:onClick="q7"
+        android:background="@drawable/buttonbg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:layout_marginStart="10dp"
         />
     <ImageView
@@ -460,6 +489,9 @@ android:layout_marginTop="5dp"
         android:layout_height="wrap_content"
         android:text="பதிவிடுங்கள்"
         android:onClick="q8"
+        android:background="@drawable/buttonbg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:layout_marginStart="10dp"
         />
     <ImageView
@@ -503,13 +535,23 @@ android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:text="இரண்டு அடி" />
+        android:text="பத்து அடி" />
+
+    <CheckBox
+        android:id="@+id/checkBox94"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="மூன்று அடி" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="பதிவிடுங்கள்"
         android:onClick="q9"
+        android:background="@drawable/buttonbg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:layout_marginStart="10dp"
         />
     <ImageView
@@ -560,6 +602,9 @@ android:layout_marginTop="5dp"
         android:layout_height="wrap_content"
         android:text="பதிவிடுங்கள்"
         android:onClick="q10"
+        android:background="@drawable/buttonbg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:layout_marginStart="10dp"
         />
     <ImageView
@@ -602,13 +647,19 @@ android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="பதிவிடுங்கள்"
-
+        android:background="@drawable/buttonbg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:layout_marginStart="10dp"
         />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="finished"
+        android:text="தேர்வு முடிவுகள்"
+        android:background="@drawable/buttonbg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="30dp"
         android:onClick="score"
         android:layout_marginStart="10dp"
         />

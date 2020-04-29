@@ -1,24 +1,62 @@
 package com.example.ettimadai;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class quizes extends AppCompatActivity {
 ImageView ans;
+String  i;
+    DatabaseReference reff;
     boolean one=false,two=false,three=false,four=false,five=false,six=false,seven=false,eight=false,nine=false,ten=false,eleven=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quizes);
+        reff= FirebaseDatabase.getInstance().getReference().child("Score");
+        final ProgressDialog progressDialog = new ProgressDialog(quizes.this);
+        progressDialog.setTitle("Wait for a minute...");
+        progressDialog.show();
+//        count c=new count();
+//c.setI("0");
+//                    reff.setValue(c);
+//                    progressDialog.dismiss();
+        reff.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot membersnapshot : dataSnapshot.getChildren()) {
+                    i=membersnapshot.getValue().toString();
+                    Toast.makeText(quizes.this,i,Toast.LENGTH_LONG).show();
+
+                }
+
+                    progressDialog.dismiss();
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
     }
     public void q1(View v)
     {
+        Toast.makeText(quizes.this,i,Toast.LENGTH_LONG).show();
         CheckBox f,a,b,c,d,e;
         a=findViewById(R.id.checkBox);
         b=findViewById(R.id.checkBox2);
@@ -39,7 +77,16 @@ one=false;
             ans.setVisibility(View.VISIBLE);
             ans.setBackgroundResource(R.drawable.wrong);
 
+
         }
+        a.setEnabled(false);
+        b.setEnabled(false);
+        c.setEnabled(false);
+        d.setEnabled(false);
+        e.setEnabled(false);
+        f.setEnabled(false);
+        //g.setEnabled(false);
+
 
     }
     public void q2(View v){
@@ -60,7 +107,9 @@ one=false;
             two=false;
             ans.setBackgroundResource(R.drawable.wrong);
         }
-
+        a.setEnabled(false);
+        b.setEnabled(false);
+        c.setEnabled(false);
     }
     public void q3(View v){
         CheckBox a,b,c;
@@ -80,7 +129,9 @@ one=false;
             three=false;
             ans.setBackgroundResource(R.drawable.wrong);
         }
-
+        a.setEnabled(false);
+        b.setEnabled(false);
+        c.setEnabled(false);
     }
     public void q4(View v){
         CheckBox a,b,c;
@@ -100,6 +151,8 @@ one=false;
             four=false;
             ans.setBackgroundResource(R.drawable.wrong);
         }
+        a.setEnabled(false);
+        b.setEnabled(false);
 
     }
     public void q5(View v){
@@ -120,7 +173,8 @@ one=false;
             five=false;
             ans.setBackgroundResource(R.drawable.wrong);
         }
-
+        a.setEnabled(false);
+        b.setEnabled(false);
     }
     public void q6(View v){
         CheckBox a,b,c;
@@ -142,7 +196,9 @@ one=false;
             six=false;
             ans.setBackgroundResource(R.drawable.wrong);
         }
-
+        a.setEnabled(false);
+        b.setEnabled(false);
+        c.setEnabled(false);
     }
     public void q7(View v){
         CheckBox a,b,c;
@@ -164,7 +220,9 @@ one=false;
             seven=false;
             ans.setBackgroundResource(R.drawable.wrong);
         }
-
+        a.setEnabled(false);
+        b.setEnabled(false);
+        c.setEnabled(false);
     }
     public void q8(View v){
         CheckBox a,b,c,d,e,g,h,f;
@@ -196,16 +254,24 @@ one=false;
             eight=false;
             ans.setBackgroundResource(R.drawable.wrong);
         }
-
-    }
+        a.setEnabled(false);
+        b.setEnabled(false);
+        c.setEnabled(false);
+        d.setEnabled(false);
+        e.setEnabled(false);
+        f.setEnabled(false);
+        g.setEnabled(false);
+        h.setEnabled(false);
+        }
     public void q9(View v){
-        CheckBox a,b,c;
+        CheckBox a,b,c,d;
         a=findViewById(R.id.checkBox91);
         b=findViewById(R.id.checkBox92);
         c=findViewById(R.id.checkBox93);
+        d=findViewById(R.id.checkBox94);
 
 
-        if(a.isChecked()==false && b.isChecked()==false && c.isChecked()==true){
+        if(a.isChecked()==false && b.isChecked()==false && c.isChecked()==false && d.isChecked()==true){
             ImageView ans=findViewById(R.id.resu9);
             ans.setVisibility(View.VISIBLE);
             ans.setBackgroundResource(R.drawable.correct);
@@ -218,7 +284,10 @@ one=false;
             nine=false;
             ans.setBackgroundResource(R.drawable.wrong);
         }
-
+        a.setEnabled(false);
+        b.setEnabled(false);
+        c.setEnabled(false);
+        d.setEnabled(false);
     }
     public void q10(View v){
         CheckBox a,b,c;
@@ -240,9 +309,18 @@ one=false;
             ten=false;
             ans.setBackgroundResource(R.drawable.wrong);
         }
-
+        a.setEnabled(false);
+        b.setEnabled(false);
+        c.setEnabled(false);
     }
     public void score(View v){
+        count cc=new count();
+        int temp=Integer.parseInt(i);
+        temp++;
+        reff= FirebaseDatabase.getInstance().getReference().child("Score");
+        i=String.valueOf(temp);
+        cc.setI(i);
+        reff.setValue(cc);
         Intent in=new Intent(this,score.class);
         int c=0;
         if(one){

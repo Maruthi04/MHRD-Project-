@@ -97,24 +97,47 @@ public class Register extends AppCompatActivity {
                 uploadImage();
             }
         });
+//        UploadButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                // Calling method to upload selected image on Firebase storage.
+//                UploadImageFileToFirebaseStorage();
+//
+//            }
+//        });
     }
     public void submitfirebase(View v)
     {
         reff= FirebaseDatabase.getInstance().getReference().child("Users");
         Member member=new Member();
-        String aadhar,mobile;
-        EditText e1,e2;
+        String aadhar,mobile,name,age,address;
+        EditText e1,e2,e3,e4,e5;
         e1=findViewById(R.id.aadhar);
         e2=findViewById(R.id.mobile);
+        e3=findViewById(R.id.name);
+        e4=findViewById(R.id.age);
+        e5=findViewById(R.id.address);
+
         if(e1.getText().toString()==NULL || e2.getText().toString()==NULL ){
             Toast.makeText(Register.this,"Please fill all the details properly!",Toast.LENGTH_LONG).show();
         }
         else{
             aadhar=e1.getText().toString();
             mobile=e2.getText().toString();
-        member.setAadhar(aadhar);
+            name=e3.getText().toString();
+            age=e4.getText().toString();
+            address=e5.getText().toString();
+
+            member.setAadhar(aadhar);
         member.setMobile(mobile);
-        reff.child(aadhar).setValue(member);
+            member.setName(name);
+            member.setAge(age);
+            member.setAddress(address);
+
+
+
+            reff.child(aadhar).setValue(member);
             Toast.makeText(Register.this,"data inserted",Toast.LENGTH_LONG).show();
             Intent in=new Intent(this,menuactivity.class);
             startActivity(in);

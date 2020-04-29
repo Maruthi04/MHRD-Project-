@@ -8,24 +8,25 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:layout_gravity="center"
+
     android:background="#fff"
     android:layout_height="match_parent"
     tools:context=".Register">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/img1"
-        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/origlogo"
+        android:layout_marginTop="50dp"
         android:layout_gravity="center"
         />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        android:textColor="#000"
+        android:textColor="#4CAF50"
 
         android:layout_marginStart="15sp"
         android:layout_marginEnd="15sp"
@@ -34,10 +35,76 @@
 
         />
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:textColor="#000"
+        android:text="உங்கள் பெயரை பதிவு செய்க"
+        android:gravity="center"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/name"
+
+        android:hint="இங்கே எழுதுங்கள்"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:textColor="#000"
+        android:text="உங்கள் வயதை பதிவு செய்க"
+        android:gravity="center"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/age"
+        android:inputType="number"
+        android:hint="இங்கே எழுதுங்கள்"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:textColor="#000"
+        android:text="உங்கள் முகவரியை பதிவு செய்க"
+        android:gravity="center"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/address"
+
+        android:hint="இங்கே எழுதுங்கள்"/>
+    <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:textSize="20sp"
-        android:layout_marginTop="20dp"
+    android:textSize="15sp"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="15sp"
         android:layout_marginEnd="15sp"
         android:textColor="#000"
@@ -45,6 +112,7 @@
     android:gravity="center"
 
     />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,11 +124,12 @@
         android:inputType="number"
 
         android:hint="இங்கே எழுதுங்கள்"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:layout_marginTop="25dp"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="15sp"
         android:layout_marginEnd="15sp"
         android:textColor="#000"
@@ -78,6 +147,10 @@
         android:id="@+id/mobile"
 android:inputType="number"
         android:hint="இங்கே எழுதுங்கள்"/>
+
+
+
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -112,7 +185,9 @@ android:inputType="number"
             android:id="@+id/btnChoose"
             android:text="புகைப்படத்தைத ேர்வு செய்யவும்"
             android:layout_weight="1"
+            android:background="@drawable/buttonbg"
             android:layout_width="match_parent"
+            android:textColor="#fff"
             android:layout_height="wrap_content" />
 
         <!--Button for uploading image-->
@@ -147,7 +222,9 @@ android:inputType="number"
         android:layout_width="match_parent"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:layout_marginBottom="50dp"
+        android:background="@drawable/buttonbg"
+        android:textColor="#fff"
+       android:layout_marginBottom="50dp"
         android:onClick="submitfirebase"
         android:layout_height="wrap_content" />
 </LinearLayout>
